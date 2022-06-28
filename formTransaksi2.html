@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <title>Apotek SEHAT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="trans.css">
+  <body>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark main-color">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">DRUGSTORE</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.php">HOME</a>
+                </li>
+              </ul>
+            </div> 
+          </nav>
+  
+  <div class="container mt-5">
+  <form action="struk.php" method="post" enctype="multipart/form-data">
+    <div class="card bg-white text-dark">
+        <div class="card-body text-center"><h3>Transaksi Pembelian</h3></div>
+                <div class="form-group">
+                <label for="nama">Nama :</label>
+                <input name="mynama" type="text" class="form-control" placeholder="Masukkan Nama">
+                </div>
+                <div class="form-group">
+                <label for="alamat">Alamat :</label>
+                <input name="myalamat" type="text" class="form-control" placeholder="Masukkan Alamat">
+                </div>
+                <div class="form-group">
+                  <label for="nama">Nama Obat :</label>
+                  <input name="mynao" type="text" class="form-control" placeholder="Masukkan Nama Obat">
+                </div>
+                <div class="form-group">
+                  <label for="jumlah">Jumlah :</label>
+                  <input name="myjml" type="text" class="form-control" placeholder="Masukkan Jumlah">
+                </div>
+                <div class="form-group">
+                  <label for="harga_obat">Harga Obat :</label>
+                  <input name="myharo" type="text" class="form-control" placeholder="Masukkan Harga Obat">
+                </div>
+                <div class="form-group">
+                <label for="ongkir">Ongkir :</label>
+                <input name="myongkir" type="text" class="form-control" placeholder="Masukkan Ongkir">
+                <p>>5km = 0, >5km = 1000</p>
+                </div>
+                <div class="form-group">
+                  <label for="total">Total Bayar :</label>
+                  <input name="mytotal" type="text" class="form-control" placeholder="Masukkan Total Bayar">
+                </div>
+                <button type="submit" class="btn btn-primary" name="send" value="Tambah">Submit</button>
+    </div>
+  </div>
+  </div>
+  <br><br><br><br>
+  <footer class="bg-light text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color:#379683;">
+            © 2020 Copyright:
+            <a class="text-dark" href=" ">DRUGSTORE</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+  </body>
+  </html>

@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <title>Apotek SEHAT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="nav.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark main-color">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">DRUGSTORE</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <a href="obatCRUD.php" class="btn btn-outline-dark ml-auto">Kembali</a>
+  </div> 
+</nav>
+<br><br>
+
+<body>
+  <h2 class="text-center" >TAMBAH DATA OBAT</h2>
+<div class="container">
+<form action="insertProcess.php" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="nama_obat">Nama Obat : </label>
+    <input name="myobat" type="text" class="form-control" placeholder="Masukkan Nama Obat">
+  </div>
+  <div class="form-group">
+    <label for="jenis_obatobat">Jenis Obat : </label>
+    <input name="myjenis" type="text" class="form-control" placeholder="Masukkan Jenis Obat">
+  </div>
+  <div class="form-group">
+    <label for="deskripsi">Deskripsi Obat : </label>
+    <input name="mydeskripsi" type="text" class="form-control" placeholder="Masukkan Deskripsi Obat">
+  </div>
+  <div class="form-group">
+    <label for="stok_obat">Stok Obat : </label>
+    <input name="mystok" type="text" class="form-control" placeholder="Masukkan Stok Obat">
+  </div>
+  <div class="form-group">
+    <label for="harga_obat">Harga Obat : </label>
+    <input name="myharga" type="text" class="form-control" placeholder="Masukkan Harga Obat">
+  </div>
+  <div class="form-group">
+    <label for="photo">Gambar Obat : </label>
+    <input name="myphoto" type="file" class="form-control" >
+  </div>
+  <button type="submit" class="btn btn-primary" name="send" value="Tambah">Submit</button>
+</form>
+<div>
+</body>

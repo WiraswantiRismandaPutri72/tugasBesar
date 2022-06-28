@@ -1,0 +1,13 @@
+.warna{
+    background-color:#edf5e1 ;
+}
+
+.warna1{
+    background-color: #379683;
+}
+
+.banner{
+    height:50vh;
+    width:210vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('banner.jpg');
+}

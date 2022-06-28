@@ -1,0 +1,9 @@
+
+.main-color{
+    background-color: #379683 !important ;
+}
+
+.banner{
+    height:80vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('banner.jpg')
+}
